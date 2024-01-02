@@ -10,7 +10,7 @@ macro_rules! cuda_path {
 #[macro_export]
 macro_rules! cuda_path {
     () => {
-        "/usr/local/cuda"
+        env!("CUDA_PATH")
     };
 }
 
