@@ -113,7 +113,7 @@ fn main() {
 
     let bindings = bindgen::Builder::default()
         .header(cuda_runtime_api_path)
-        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .parse_callbacks(Box::new(CudaParseCallbacks))
         .size_t_is_usize(true)
         .generate_comments(false)
