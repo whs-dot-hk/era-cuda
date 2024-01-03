@@ -5,6 +5,7 @@
 mod path;
 
 use std::backtrace::Backtrace;
+use std::env;
 use std::error::Error;
 use std::ffi::CStr;
 use std::fmt::{Debug, Display, Formatter};
